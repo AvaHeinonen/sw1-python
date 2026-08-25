@@ -19,7 +19,7 @@ if money_in_pocket >= 5
 
 The pseudo code shows that the decision is made based on whether a condition is true. The condition in this case is that there is at least 5 euros of money. The condition can be true or false: For example, if there were 7 euros the statement would be `7 >= 5` which is true. On the other hand, if there were only 4.85 euros in the pocket, the condition would be `4.85 <= 5` which is false.
 
-The program flow can also be described with a flowchart (_flowchart_). A flowchart is a graphical representation of the program's execution path. It is a useful tool for understanding the program's structure. The following shows the flowchart for the selection structure mentioned above:
+The program flow can also be described with a _flowchart_. A flowchart is a graphical representation of the program's execution path. It is a useful tool for understanding the program's structure. The following shows the flowchart for the selection structure mentioned above:
 
 ```mermaid
 graph TD
@@ -47,9 +47,7 @@ The expressions inside the conditional block must be indented by one step. In Py
 
 ## Conditionally executed program parts
 
-Let's write the first example of a program that uses a conditional statement. The program asks the user
-how much money they have in their pocket and lets them know if it is enough to buy the latte that costs 5
-euros. If there is not enough money, there is no output:
+Let's write the first example of a program that uses a conditional statement. The program asks the user how much money they have in their pocket and lets them know if it is enough to buy the latte that costs 5 euros. If there is not enough money, there is no output:
 
 ```python
 money = float(input("Enter amount of money: "))
@@ -93,11 +91,9 @@ You can use the following comparison operators to express conditions in Python:
 | `==`     | equal to                 |
 | `!=`     | not equal to             |
 
-Logical operators can be chained. The following statement is true when a person's height is at least
-170 but less than 180 cm: `170 <= height < 180`.
+Logical operators can be chained. The following statement is true when a person's height is at least 170 but less than 180 cm: `170 <= height < 180`.
 
-Operators can also be used with string type expressions. For example, for strings `m1` and `m2` statement
-`m1 < m2` is true if `m1` comes earlier in the alphabetical order than `m2`.
+Operators can also be used with string type expressions. For example, for strings `m1` and `m2` statement `m1 < m2` is true if `m1` comes earlier in the alphabetical order than `m2`.
 
 The following example checks if two strings are equal:
 
@@ -121,9 +117,7 @@ Oh my! The cat and dog have the same name!
 
 ## Logical operators
 
-In earlier examples, the condition of a selection statement was presented in a simple way using comparison operators.
-Sometimes the condition is more complex: it might for example consist of several individual conditions that all have
-to be true for the condition to be true as a whole. These types of structural conditions can be built using logical
+In earlier examples, the condition of a selection statement was presented in a simple way using comparison operators. Sometimes the condition is more complex: it might for example consist of several individual conditions that all have to be true for the condition to be true as a whole. These types of structural conditions can be built using logical
 operators.
 
 Python has the following logical operators:
@@ -141,8 +135,7 @@ In that case:
 - statement `a or b` is true when at least one of statements `a` and `b` are true.
 - statement `not a` is true precisely when statement `a` is false.
 
-The order of precedence of the logical operators is as follows: the `not` operator is applied first, then the `and`
-operator and lastly the `or` operator. The order can be altered using parentheses.
+The order of precedence of the logical operators is as follows: the `not` operator is applied first, then the `and` operator and lastly the `or` operator. The order can be altered using parentheses.
 
 Examples:
 
@@ -150,10 +143,7 @@ Examples:
 - statement `(a or b) and c` is true when at least one of statements `a` and `b` are true and also statement `c` is true.
 - statement `a and not b` is true when `a` is true and `b` is false.
 
-Let's look at an example program that notifies if medicine can be given to a patient. The medicine can be administered
-if the patient is an adult. Using the medicine is permitted also if the patient is at least 15 years old and their weight is
-at least 55 kilograms. The following program first asks the age of the patient. If the age is at least 15 but less than 18 years,
-the program also asks the weight. Finally, the program notifies the user if the medicine can be used.
+Let's look at an example program that notifies if medicine can be given to a patient. The medicine can be administered if the patient is an adult. Using the medicine is permitted also if the patient is at least 15 years old and their weight is at least 55 kilograms. The following program first asks the age of the patient. If the age is at least 15 but less than 18 years, the program also asks the weight. Finally, the program notifies the user if the medicine can be used.
 
 ```python
 age = int(input("Enter age: "))
@@ -288,9 +278,7 @@ How does a structure with `elif` branches work? The execution proceeds as follow
    and execution stops.
 4. If the age was less than 7 years, the last conditional block in the `else` branch is executed.
 
-If we look at the program, we can see that it was written so that the strict condition of the first branch is gradually
-loosened by each branch, so we do not need upper limits for the age in the conditions. They can be written but it would
-be unnecessary and create a new possibility for a programming error.
+If we look at the program, we can see that it was written so that the strict condition of the first branch is gradually loosened by each branch, so we do not need upper limits for the age in the conditions. They can be written but it would be unnecessary and create a new possibility for a programming error.
 
 ---
 
