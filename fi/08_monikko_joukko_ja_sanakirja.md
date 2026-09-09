@@ -213,8 +213,8 @@ Eräs yleisesti käytetty sisäkkäinen tietorakenne on **lista, jonka alkiot ov
 
 Käsitellään esimerkkinä ohjelmaa, joka tallentaa tietoja (merkki, malli ja vuosimalli) useista autoista.
 
-- Jos käyttäisimme vain yhtä listaa, kuten `["Toyota", "Corolla", 2018, "Ford", "Focus", 2020], olisi ohjelmasa hyvin vaikeaa pitää yllä eri autojen tietoja.
-- Yhdellä sanakirjalla voisimme tallentaa yhden auton tiedot: `{"merkki": "Toyota", "malli": "Corolla", "vuosimalli": 2018}`. Voisimme tallentaa autojen tiedot tällaisiin sanakirjatyyppisiin muuttujiin, mutta se ei olisi käytännöllistä jos autoja on paljon.
+- Jos käyttäisimme vain yhtä listaa, kuten `["Toyota", "Corolla", 2018, "Ford", "Focus", 2020]`, olisi ohjelmasa hyvin vaikeaa pitää yllä eri autojen tietoja.
+- Yhdellä sanakirjalla voisimme tallentaa yhden auton tiedot: `{"merkki": "Toyota", "malli": "Corolla", "vuosimalli": 2018}`. Voisimme tallentaa autojen tiedot tällaisiin sanakirjatyyppisiin muuttujiin, mutta se ei olisi käytännöllistä, jos autoja on paljon.
 
 Ylläolevat ongelmat ratkeavat käyttämällä listaa, jonka alkio on yksittäisen auton tiedot sisältävä sanakirja. Sanakirjan avaimet kuvaavat auton ominaisuuksia. Esimerkiksi:
 
